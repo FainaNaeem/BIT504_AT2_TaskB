@@ -37,14 +37,16 @@ public class Cell {
 				
 				if (content == Player.Cross)
 				{
-					graphic2D.setColor(Color.RED);
+					// change the color of cross from red to Green 
+					graphic2D.setColor(Color.GREEN);
 					int x2 = (col + 1) * Main.CELL_SIZE - Main.CELL_PADDING;
 					int y2 = (row + 1) * Main.CELL_SIZE - Main.CELL_PADDING;
 					graphic2D.drawLine(x1, y1, x2, y2);
 					graphic2D.drawLine(x2, y1, x1, y2);
 				}
 				else if (content == Player.Nought) {
-					graphic2D.setColor(Color.BLUE);
+					// change the color of Nought from blue to Yellow 
+					graphic2D.setColor(Color.YELLOW);
 					graphic2D.drawOval(x1, y1, Main.SYMBOL_SIZE, Main.SYMBOL_SIZE);
 				}
 			}
